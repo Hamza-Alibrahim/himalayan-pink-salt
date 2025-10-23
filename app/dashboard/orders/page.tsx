@@ -312,7 +312,7 @@ const OrdersPage = () => {
   );
 
   return (
-    <div className="p-5">
+    <div>
       <DashTable
         title="Orders"
         columns={[

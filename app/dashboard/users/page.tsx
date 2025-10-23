@@ -166,7 +166,7 @@ const page = () => {
   );
 
   return (
-    <div className="p-5">
+    <div>
       <DashTable
         title="Users"
         columns={[
