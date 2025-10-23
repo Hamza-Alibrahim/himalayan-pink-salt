@@ -3,6 +3,35 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Primary Colors */
+  --color-white: #FDFDFD;
+  --color-off-white: #F5F5F5;
+  --color-light-gray: #F8F8F8;
+
+  /* Text Colors */
+  --color-text-dark: #333333;
+  --color-text-medium: #666666;
+  --color-text-light: #888888;
+  --color-text-brown: #4A3F35;
+
+  /* Pink Salt Colors */
+  --color-pink-light: #F8E9E9;
+  --color-pink-medium: #E8C4C4;
+  --color-pink-dark: #C46B6B;
+  --color-pink-accent: #D4A5A5;
+
+  /* CTA & Accent Colors */
+  --color-terracotta: #C46B6B;
+  --color-terracotta-dark: #A85A5A;
+  --color-success: #4CAF50;
+
+  /* Border Colors */
+  --color-border-light: #E5E5E5;
+  --color-border-medium: #DDDDDD;
+
+  /* Popup Background */
+  --color-black-light: rgba(0, 0, 0, 0.5);
 }
 
 @theme inline {
@@ -10,6 +39,39 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Custom Colors */
+  --color-white: var(--color-white);
+  --color-off-white: var(--color-off-white);
+  --color-light-gray: var(--color-light-gray);
+
+  /* Text Colors */
+  --color-text-dark: var(--color-text-dark);
+  --color-text-medium: var(--color-text-medium);
+  --color-text-light: var(--color-text-light);
+  --color-text-brown: var(--color-text-brown);
+
+  /* Pink Colors */
+  --color-pink-light: var(--color-pink-light);
+  --color-pink-medium: var(--color-pink-medium);
+  --color-pink-dark: var(--color-pink-dark);
+  --color-pink-accent: var(--color-pink-accent);
+
+  /* CTA Colors */
+  --color-terracotta: var(--color-terracotta);
+  --color-terracotta-dark: var(--color-terracotta-dark);
+  --color-success: var(--color-success);
+
+  /* Border Colors */
+  --color-border-light: var(--color-border-light);
+  --color-border-medium: var(--color-border-medium);
+
+  /* Popup Background */
+  --color-black-light: var(--color-black-light);
+
+  /* Custom Font Families */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +81,15 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+section {
+  scroll-margin-top: 3.5rem;
 }
