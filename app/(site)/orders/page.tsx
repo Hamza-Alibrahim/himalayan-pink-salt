@@ -181,7 +181,7 @@ const OrdersPage = () => {
       : "";
 
     return (
-      <div className="text-center group relative">
+      <div className="sm:text-center group relative">
         <span
           className="font-medium text-text-dark cursor-help text-sm sm:text-base"
           title={itemNames}
@@ -250,7 +250,7 @@ const OrdersPage = () => {
 
         {/* Order Details Modal */}
         {isModalOpen && selectedOrder && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-3 sm:p-4 z-50">
+          <div className="fixed inset-0 bg-black-light bg-opacity-50 flex items-center justify-center p-3 sm:p-4 z-50">
             <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
               <div className="p-4 sm:p-6">
                 {/* Header */}
